@@ -95,7 +95,7 @@ footer {
 #soron{
    width: 50px;
   height: 60px;
-  border: 2px solid rgb(219, 194, 147);
+  border: 2px solid rgb(156, 68, 13);
   border-radius: 50px;
   box-shadow: black 10px 10px 10px 0px;
 }
@@ -117,6 +117,33 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
   
+}
+#theme {
+  padding: 6px 14px;              /* ছোট সাইজের padding */
+  font-size: 14px;                /* টেক্সটের সাইজ ছোট */
+  border: none;
+  border-radius: 10px;            /* হালকা গোলাকার কর্নার */
+  background-color: aqua;         /* ব্যাকগ্রাউন্ড কালার */
+  color: black;                   /* টেক্সট কালার */
+  cursor: pointer;                /* hover করলে হাতের কার্সর */
+  position: absolute;
+  top: 10px;                      /* পেজের একদম উপরে */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;    
+  box-shadow: black 10px 10px 10px 0px;               /* এই লাইনটাই মূল — full width না হয়ে auto হবে */
+}
+
+
+
+/*theme change */
+.dark{
+    background-color: black;
+    color: rgb(0, 0, 0);
+}
+.light{
+    background-color: #f4e3c1;
+    color: black;
 }
 
 
