@@ -127,8 +127,8 @@ footer {
   color: black;                   /* টেক্সট কালার */
   cursor: pointer;                /* hover করলে হাতের কার্সর */
   position: absolute;
-  top: 10px;                      /* পেজের একদম উপরে */
-  left: 50%;
+  top: 50px;                      /* পেজের একদম উপরে */
+  left: 16%;
   transform: translateX(-50%);
   width: auto;    
   box-shadow: black 10px 10px 10px 0px;               /* এই লাইনটাই মূল — full width না হয়ে auto হবে */
