@@ -60,20 +60,3 @@ btn.addEventListener("click", (evt) => {
 window.addEventListener("load", () => {
   updateExchangeRate();
 });
-
-
-let BtnCng=document.querySelector("#theme");
-let body = document.querySelector("body");
-let currMode= "light";
-BtnCng.addEventListener("click",()=>{
-    if(currMode === "light"){
-        currMode="Dark";
-        body.classList.add("dark");
-        body.classList.remove("light");
-    }else{
-        currMode="light";
-        body.classList.add("light");
-         body.classList.remove("dark");
-    }
-    console.log(currMode);
-});

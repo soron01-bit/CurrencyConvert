@@ -118,34 +118,6 @@ footer {
   text-decoration: underline;
   
 }
-#theme {
-  padding: 6px 14px;              /* ছোট সাইজের padding */
-  font-size: 14px;                /* টেক্সটের সাইজ ছোট */
-  border: none;
-  border-radius: 10px;            /* হালকা গোলাকার কর্নার */
-  background-color: aqua;         /* ব্যাকগ্রাউন্ড কালার */
-  color: black;                   /* টেক্সট কালার */
-  cursor: pointer;                /* hover করলে হাতের কার্সর */
-  position: absolute;
-  top: 50px;                      /* পেজের একদম উপরে */
-  left: 16%;
-  transform: translateX(-50%);
-  width: auto;    
-  box-shadow: black 10px 10px 10px 0px;               /* এই লাইনটাই মূল — full width না হয়ে auto হবে */
-}
-
-
-
-/*theme change */
-.dark{
-    background-color: black;
-    color: rgb(0, 0, 0);
-}
-.light{
-    background-color: #f4e3c1;
-    color: black;
-}
-
 
 /* 🔹 Responsive Design 🔹 */
 @media (max-width: 768px) {
@@ -196,4 +168,15 @@ footer {
   form button {
     font-size: 0.9rem;
   }
+}
+body {
+  background: linear-gradient(-45deg, #00ffff, #ff00ff, #00ff00, #ffff00);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
